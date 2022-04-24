@@ -1,11 +1,11 @@
 class Solution {
 public:
     int hammingWeight(uint32_t n) {
-        int res=0;
+        int count=0;
         while(n>0){
             n=(n & (n-1));
-            res++;
+            count++;
         }
-        return res;
+        return count;
     }
 };
