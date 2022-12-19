@@ -11,9 +11,10 @@ public:
 	    int res=0;
 	    for (int i=0;i<n;i++){
 	        if(arr[i]!=0){
-	            int temp=arr[i];
-	            arr[i]= arr[res];
-	            arr[res]=temp;
+	           // int temp=arr[i];
+	           // arr[i]= arr[res];
+	            //arr[res]=temp;
+	            swap(arr[i],arr[res]);
 	            res++;
 	        }
 	    }
